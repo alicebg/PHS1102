@@ -1,0 +1,89 @@
+%\newgeometry{tmargin=2.0cm, bmargin=2.0cm, lmargin=2.25cm, rmargin=2.25cm, headsep=1.0cm}
+\newgeometry{top=2cm}
+\definecolor{gris1}{gray}{0.75}
+
+\newcommand{\encadre}[1]{
+\setlength\fboxsep{5mm}\setlength\fboxrule{1pt}
+\begin{center}
+\fcolorbox{black}{gris1}{
+\begin{minipage}{0.94\textwidth}{#1}\end{minipage}}
+\end{center}}
+
+% encadre blanc
+\newcommand{\boite}[1]{
+\setlength\fboxsep{5mm}\setlength\fboxrule{1pt}
+\begin{center}
+\fcolorbox{black}{white}{
+\begin{minipage}{0.5\textwidth}{#1}\end{minipage}}
+\end{center}}
+
+
+%\begin{document}
+
+\thispagestyle{empty}
+
+\encadre{
+\begin{center}
+\bf
+{\Large \scshape 
+\vspace{10mm}
+Polytechnique Montr\'eal
+\\
+D\'epartement de G\'enie Physique
+}
+\\
+{\Huge
+\
+
+PHS1102 \\
+Champs électromagnétiques
+\\
+Hiver 2017
+
+\
+
+Laboratoire 1:\\
+Mesure de la permitivité
+
+\vspace{15mm}
+
+}
+\end{center}
+}
+
+\vfill
+
+\fcolorbox{black}{white}{
+\begin{minipage}{0.94\linewidth}
+
+\vspace{4mm}
+
+\begin{multicols}{3}
+	{\bf Nom: }\nomUn
+	\\
+	\\
+	{\bf Nom: }\nomDeux 
+
+	{\bf Pr\'enom: }\prenomUn 
+	\\
+	\\
+	{\bf Pr\'enom: }\prenomDeux
+ 
+	{\bf Matricule: }\matriculeUn
+	\\
+	\\
+	{\bf Matricule: }\matriculeDeux
+\end{multicols}
+
+\vspace{2mm}
+
+{\bf Date de remise: }\dateRemise \hspace{38mm} {\bf Section: }\groupe
+
+\vspace{4mm}
+
+\end{minipage}}
+
+\vfill
+
+\restoregeometry
+%\end{document}
